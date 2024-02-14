@@ -6,7 +6,7 @@ export default function TypesOfClothes() {
     <div className="flex flex-wrap mt-20 ml-5 mr-5">
       {types.map((el, i) => (
         <div key={i} className="basis-1/5 mb-5 p-1">
-          <Image src={el.img.url} height={150} alt="" />
+          <Image src={el.img.url} height={150} alt="" className="m-auto" />
           <h2 className="text-center">{el.name}</h2>
         </div>
       ))}
