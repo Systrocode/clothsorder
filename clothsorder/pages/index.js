@@ -4,6 +4,7 @@ import Categories from "@/components/categories";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./home_page";
 import Cart from "./cart";
+import Product from "./product";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,14 +12,15 @@ export default function Home() {
   return (
     <main>
       <NavBar></NavBar>
+      <Categories></Categories>
       <div>
-        <Categories></Categories>
-        <Cart></Cart>
+        {/* <Cart></Cart> */}
         {/* <HomePage></HomePage> */}
 
         {/* <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes> */}
+        <Product></Product>
       </div>
     </main>
   );
