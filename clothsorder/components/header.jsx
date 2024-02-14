@@ -6,6 +6,7 @@ export default function Header() {
   return (
     <div className="shadow-md pb-2">
       <div> </div>
+
       <div className="flex flex-row-reverse mr-5 mt-3">
         <Image src={cartIcon} width={25} alt="" className="m-3" />
         <div className="flex items-center mr-4">
